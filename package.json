@@ -39,6 +39,7 @@
     "method-override": "^2.3.3",
     "mocha": "~1.20.0",
     "mongoose": "^4.0.6",
+    "mongoose-validators": "^0.1.0",
     "morgan": "^1.6.1",
     "multer": "0.1.8",
     "node-pre-gyp": "0.6.4",
