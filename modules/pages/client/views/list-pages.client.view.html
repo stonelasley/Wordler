@@ -1,0 +1,20 @@
+<section ng-controller="PagesController" ng-init="find()">
+  <div class="page-header">
+    <h1>Pages</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="page in pages" ui-sref="pages.view({pageId: page._id})" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="page.created | date:'mediumDate'"></span>
+        by
+        <span ng-bind="page.user.displayName"></span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="page.url"></h4>
+      <p class="list-group-item-text" ng-bind="page.note"></p>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="pages.$resolved && !pages.length">
+    No pages yet, why don't you <a ui-sref="pages.create">create one</a>?
+  </div>
+</section>
