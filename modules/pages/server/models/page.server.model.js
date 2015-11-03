@@ -23,7 +23,7 @@ var PageSchema = new Schema({
         default: '',
         trim: true,
         required: 'Url cannot be blank',
-        validate: validators.isURL({message: "Url must be a valid url such as 'http://www.wordler.com' or 'wordler.com'"})
+        validate: validators.isURL({require_protocol: true, message: "Url must be a valid url such as 'http://www.wordler.com'"})
     },
     host: {
         type: String,
