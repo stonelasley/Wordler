@@ -1,6 +1,7 @@
 <section ng-controller="PagesController" ng-init="findOne()">
   <div class="page-header">
-    <h1 ng-bind="page.url"></h1>
+    <h1 ng-bind="page.host"></h1>
+    <h3 ng-bind="page.url"></span></h3>
   </div>
   <div class="pull-right" ng-show="authentication.user._id == page.user._id">
     <a class="btn btn-primary" ui-sref="pages.edit({pageId: page._id})">
@@ -10,6 +11,8 @@
       <i class="glyphicon glyphicon-trash"></i>
     </a>
   </div>
+  <p ng-bind="page.words"></p>
+  <p class="lead" ng-bind="page.note"></p>
   <small>
     <em class="text-muted">
       Posted on
@@ -18,5 +21,4 @@
       <span ng-bind="page.user.displayName"></span>
     </em>
   </small>
-  <p class="lead" ng-bind="page.note"></p>
 </section>
