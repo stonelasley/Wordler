@@ -74,10 +74,13 @@ var scrapeWords = function(host, scraper, body) {
 
     });
     for (var prop in corpus) {
-        var kvp = {};
-        kvp[prop] = corpus[prop];
+        var kvp = {
+            k : prop,
+            v : corpus[prop]
+        };
         words.push(kvp);
     }
+    console.log(words);
     return JSON.stringify(words);
 };
 
