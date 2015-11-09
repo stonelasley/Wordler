@@ -119,31 +119,7 @@ angular.module('pages').controller('PagesController', ['$scope', '$stateParams',
         $scope.data = [{
             key: "Cumulative Return",
             //values: $scope.page.words
-            ///values: [{"k":"the","v":12},{"k":"and","v":12},{"k":"said","v":3},{"k":"top","v":3},{"k":"united","v":2},{"k":"states","v":2},{"k":"will","v":2},{"k":"china","v":2},{"k":"saturday","v":5},{"k":"for","v":4},{"k":"video","v":3},{"k":"southeast","v":2},{"k":"that","v":2},{"k":"was","v":2},{"k":"presidential","v":2},{"k":"such","v":2},{"k":"their","v":2},{"k":"first","v":2},{"k":"they","v":2},{"k":"from","v":3},{"k":"full","v":2},{"k":"news","v":8},{"k":"world","v":2},{"k":"business","v":2},{"k":"reuters","v":3},{"k":"delayed","v":2},{"k":"least","v":2},{"k":"minutes","v":2}]
-            values: [
-                {"k": "the", "v": 12},
-                {"k": "and", "v": 12},
-                {"k": "said", "v": 3},
-                {"k": "top", "v": 3},
-                {
-                    "k": "united", "v": 2
-                }, {"k": "states", "v": 2}, {"k": "will", "v": 2}, {"k": "china", "v": 2}, {
-                    "k": "saturday",
-                    "v": 5
-                }, {"k": "for", "v": 4}, {"k": "video", "v": 3}, {"k": "southeast", "v": 2}, {
-                    "k": "that",
-                    "v": 2
-                }, {"k": "was", "v": 2}, {"k": "presidential", "v": 2}, {"k": "such", "v": 2}, {
-                    "k": "their",
-                    "v": 2
-                }, {"k": "first", "v": 2}, {"k": "they", "v": 2}, {"k": "from", "v": 3}, {"k": "full", "v": 2}, {
-                    "k": "news",
-                    "v": 8
-                }, {"k": "world", "v": 2}, {"k": "business", "v": 2}, {"k": "reuters", "v": 3}, {
-                    "k": "delayed",
-                    "v": 2
-                }, {"k": "least", "v": 2}, {"k": "minutes", "v": 2}
-            ]
+            values: [{"k":"the","v":12},{"k":"and","v":12},{"k":"said","v":3},{"k":"top","v":3},{"k":"united","v":2},{"k":"states","v":2},{"k":"will","v":2},{"k":"china","v":2},{"k":"saturday","v":5},{"k":"for","v":4},{"k":"video","v":3},{"k":"southeast","v":2},{"k":"that","v":2},{"k":"was","v":2},{"k":"presidential","v":2},{"k":"such","v":2},{"k":"their","v":2},{"k":"first","v":2},{"k":"they","v":2},{"k":"from","v":3},{"k":"full","v":2},{"k":"news","v":8},{"k":"world","v":2},{"k":"business","v":2},{"k":"reuters","v":3},{"k":"delayed","v":2},{"k":"least","v":2},{"k":"minutes","v":2}]
         }];
 
 
