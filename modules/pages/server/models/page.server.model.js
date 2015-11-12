@@ -80,7 +80,7 @@ var scrapeWords = function(host, scraper, body) {
         };
         words.push(kvp);
     }
-    console.log(words);
+
     return JSON.stringify(words);
 };
 

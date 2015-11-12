@@ -54,7 +54,7 @@ describe('Page CRUD tests', function () {
     });
   });
 
-  it('should be able to save an page if logged in', function (done) {
+  it('should be able to save a page if logged in', function (done) {
     agent.post('/api/auth/signin')
       .send(credentials)
       .expect(200)
@@ -99,7 +99,7 @@ describe('Page CRUD tests', function () {
       });
   });
 
-  it('should not be able to save an page if not logged in', function (done) {
+  it('should not be able to save a page if not logged in', function (done) {
     agent.post('/api/pages')
       .send(page)
       .expect(403)
@@ -109,7 +109,7 @@ describe('Page CRUD tests', function () {
       });
   });
 
-  it('should not be able to save an page if no url is provided', function (done) {
+  it('should not be able to save a page if no url is provided', function (done) {
     // Invalidate url field
     page.url = '';
 
@@ -139,7 +139,7 @@ describe('Page CRUD tests', function () {
       });
   });
 
-  it('should be able to update an page if signed in', function (done) {
+  it('should be able to update a page if signed in', function (done) {
     agent.post('/api/auth/signin')
       .send(credentials)
       .expect(200)
@@ -163,7 +163,7 @@ describe('Page CRUD tests', function () {
             }
 
             // Update page url
-            page.url = 'http://amazon.com';
+            page.url = 'http://reddit.com';
 
             // Update an existing page
             agent.put('/api/pages/' + pageSaveRes.body._id)
@@ -177,7 +177,7 @@ describe('Page CRUD tests', function () {
 
                 // Set assertions
                 (pageUpdateRes.body._id).should.equal(pageSaveRes.body._id);
-                (pageUpdateRes.body.url).should.match('http://amazon.com');
+                (pageUpdateRes.body.url).should.match('http://reddit.com');
 
                 // Call the assertion callback
                 done();

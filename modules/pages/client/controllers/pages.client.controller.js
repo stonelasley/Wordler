@@ -79,8 +79,10 @@ angular.module('pages').controller('PagesController', ['$scope', '$stateParams',
       $scope.page = Pages.get({
         pageId: $stateParams.pageId
       }, function () {
-        $scope.data[0].values = JSON.parse($scope.page.words);
-        $scope.api.refresh();
+        if($scope.page.words) {
+          $scope.data[0].values = JSON.parse($scope.page.words);
+          $scope.api.refresh();
+        }
       });
     };
 
